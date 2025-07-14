@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>nmrSHOP🛒 | Oyun Balansı Satışı</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1a1a1a;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #25D366;
+    }
+    .container {
+      padding: 20px;
+    }
+    .product {
+      background-color: #1e1e1e;
+      margin-bottom: 15px;
+      padding: 15px;
+      border-radius: 10px;
+    }
+    .product h3 {
+      margin: 0 0 10px;
+    }
+    .product button {
+      background-color: #25D366;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .product button:hover {
+      background-color: #20b856;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>nmrSHOP 🛒</h1>
+    <p>PUBG və digər oyunlara balans – Birbaşa WhatsApp ilə sifariş et!</p>
+  </header>
+
+  <div class="container">
+
+    <div class="product">
+      <h3>60 UC – 1.70 AZN</h3>
+      <button onclick="location.href='https://wa.me/994602020833?text=Salam,%20men%2060%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button>
+    </div>
+
+    <div class="product">
+      <h3>325 UC – 7.50 AZN</h3>
+      <button onclick="location.href='https://wa.me/994602020833?text=Salam,%20men%20325%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button>
+    </div>
+
+    <div class="product">
+      <h3>660 UC – 15 AZN</h3>
+      <button onclick="location.href='https://wa.me/994602020833?text=Salam,%20men%20660%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button>
+    </div>
+
+    <div class="product">
+      <h3>1800 UC – 41 AZN</h3>
+      <button onclick="location.href='https://wa.me/994602020833?text=Salam,%20men%201800%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 nmrSHOP🛒 | Güvənli oyun alış-verişi!
+  </footer>
+</body>
+</html>
