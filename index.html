@@ -7,127 +7,140 @@
   <title>nmrSHOP🛒 | Oyun Balansı Satışı</title>
   <style>
     body {
-      font-family: sans-serif;
-      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
-      color: #fff;
       margin: 0;
-      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d0d0d;
+      color: #f1f1f1;
     }
     header {
-      background: linear-gradient(90deg, #ffcc00, #ff9900);
-      padding: 20px;
+      background: linear-gradient(to right, #ffcc00, #ff9900);
+      padding: 30px 10px;
       text-align: center;
       color: #000;
     }
     header h1 {
       margin: 0;
-      font-size: 30px;
+      font-size: 36px;
+      font-weight: bold;
     }
-    .banner img {
-      width: 100%;
-      max-height: 200px;
-      object-fit: cover;
-    }
-    .section-title {
-      background-color: #222;
-      padding: 10px;
-      font-size: 20px;
-      margin-top: 20px;
+    header p {
+      margin-top: 8px;
+      font-size: 18px;
     }
     .container {
+      max-width: 1000px;
+      margin: 0 auto;
       padding: 20px;
     }
+    .section {
+      margin-top: 30px;
+    }
+    .section h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #555;
+      padding-bottom: 5px;
+      color: #ffcc00;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
     .product {
-      background-color: #2a2a2a;
-      margin-bottom: 15px;
-      padding: 15px;
-      border-radius: 10px;
+      background-color: #1c1c1c;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(255, 204, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .product:hover {
+      transform: translateY(-5px);
     }
     .product h3 {
-      margin: 0 0 10px;
+      margin-top: 0;
+      font-size: 18px;
     }
     .product button {
+      margin-top: 10px;
       background-color: #25D366;
       color: white;
       border: none;
-      padding: 10px 20px;
+      padding: 10px 16px;
       font-size: 16px;
       border-radius: 8px;
       cursor: pointer;
+      width: 100%;
     }
     .product button:hover {
-      background-color: #1eb053;
+      background-color: #1cae5d;
     }
-    .game-icons {
+    .games {
       display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
       justify-content: center;
-      margin-top: 20px;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 25px;
     }
-    .game-icons img {
-      width: 100px;
-      height: 100px;
-      border-radius: 12px;
+    .games img {
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
       object-fit: cover;
+      border: 2px solid #333;
     }
     footer {
       text-align: center;
       padding: 20px;
       font-size: 14px;
-      color: #ccc;
+      color: #aaa;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>nmrSHOP 🛒</h1>
-    <p>Oyunlar üçün balans və UC – WhatsApp ilə güvənli sifariş!</p>
+    <p>Oyun Balans Satışı – PUBG, COD, Valorant və daha çoxu!</p>
   </header>
-
-  <div class="banner">
-    <img src="https://i.imgur.com/EeBMQ3T.jpg" alt="PUBG Banner" />
-  </div>
 
   <div class="container">
 
-    <div class="section-title">💰 Ən Yeni Qiymətlər:</div>
+    <div class="section">
+      <h2>💰 Ən Yeni Qiymətlər</h2>
+      <div class="product-grid">
 
-    <div class="product"><h3>✔ 60 UC → 1.80 AZN</h3><button onclick="location.href='https://wa.me/994602020833?text=Salam,%2060%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button></div>
-    <div class="product"><h3>✔ 325 UC → 7.90 AZN</h3><button onclick="location.href='https://wa.me/994602020833?text=Salam,%20325%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button></div>
-    <div class="product"><h3>✔ 385 UC → 9.70 AZN</h3><button onclick="location.href='https://wa.me/994602020833?text=Salam,%20385%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button></div>
+        <div class="product"><h3>✔ 60 UC → 1.80 AZN</h3><button onclick="location.href='https://wa.me/994602020833?text=Salam,%2060%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button></div>
+        <div class="product"><h3>✔ 325 UC → 7.90 AZN</h3><button onclick="location.href='https://wa.me/994602020833?text=Salam,%20325%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button></div>
+        <div class="product"><h3>✔ 385 UC → 9.70 AZN</h3><button onclick="location.href='https://wa.me/994602020833?text=Salam,%20385%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button></div>
+        <div class="product"><h3>✔ 660 UC → 15.60 AZN</h3><button onclick="location.href='https://wa.me/994602020833?text=Salam,%20660%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button></div>
+        <div class="product"><h3>✔ 1.800 UC → 39.50 AZN</h3><button onclick="location.href='https://wa.me/994602020833?text=Salam,%201800%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button></div>
+        <div class="product"><h3>✔ 2.460 UC → 56 AZN</h3><button onclick="location.href='https://wa.me/994602020833?text=Salam,%202460%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button></div>
+        <div class="product"><h3>✔ 3.910 UC → 80.90 AZN</h3><button onclick="location.href='https://wa.me/994602020833?text=Salam,%203910%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button></div>
+        <div class="product"><h3>✔ 8.100 UC → 151.90 AZN</h3><button onclick="location.href='https://wa.me/994602020833?text=Salam,%208100%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button></div>
+        <div class="product"><h3>✔ 16.200 UC → 307 AZN</h3><button onclick="location.href='https://wa.me/994602020833?text=Salam,%2016200%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button></div>
+        <div class="product"><h3>✔ 24.300 UC → 460 AZN</h3><button onclick="location.href='https://wa.me/994602020833?text=Salam,%2024300%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button></div>
+        <div class="product"><h3>✔ 32.400 UC → 614.90 AZN</h3><button onclick="location.href='https://wa.me/994602020833?text=Salam,%2032400%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button></div>
+        <div class="product"><h3>✔ 40.500 UC → 765 AZN</h3><button onclick="location.href='https://wa.me/994602020833?text=Salam,%2040500%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button></div>
 
-    <div class="section-title">🚀 POPULYAR SEÇİMLƏR:</div>
+      </div>
+    </div>
 
-    <div class="product"><h3>✔ 660 UC → 15.60 AZN</h3><button onclick="location.href='https://wa.me/994602020833?text=Salam,%20660%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button></div>
-    <div class="product"><h3>✔ 1.800 UC → 39.50 AZN</h3><button onclick="location.href='https://wa.me/994602020833?text=Salam,%201800%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button></div>
-    <div class="product"><h3>✔ 2.460 UC → 56 AZN</h3><button onclick="location.href='https://wa.me/994602020833?text=Salam,%202460%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button></div>
-
-    <div class="section-title">💎 PROFESSIONAL PAKETLƏR:</div>
-
-    <div class="product"><h3>✔ 3.910 UC → 80.90 AZN</h3><button onclick="location.href='https://wa.me/994602020833?text=Salam,%203910%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button></div>
-    <div class="product"><h3>✔ 8.100 UC → 151.90 AZN</h3><button onclick="location.href='https://wa.me/994602020833?text=Salam,%208100%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button></div>
-
-    <div class="section-title">⚡ MEGA QƏNƏƏT PAKETLƏRİ:</div>
-
-    <div class="product"><h3>✔ 16.200 UC → 307 AZN</h3><button onclick="location.href='https://wa.me/994602020833?text=Salam,%2016200%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button></div>
-    <div class="product"><h3>✔ 24.300 UC → 460 AZN</h3><button onclick="location.href='https://wa.me/994602020833?text=Salam,%2024300%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button></div>
-    <div class="product"><h3>✔ 32.400 UC → 614.90 AZN</h3><button onclick="location.href='https://wa.me/994602020833?text=Salam,%2032400%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button></div>
-    <div class="product"><h3>✔ 40.500 UC → 765 AZN</h3><button onclick="location.href='https://wa.me/994602020833?text=Salam,%2040500%20UC%20sifariş%20etmək%20istəyirəm.'">Sifariş et</button></div>
-
-    <div class="section-title">🎮 Digər Oyunlar üçün də balans mövcuddur:</div>
-
-    <div class="game-icons">
-      <img src="https://i.imgur.com/27XcZg6.png" alt="CODM" title="Call of Duty Mobile">
-      <img src="https://i.imgur.com/PSN0w9v.png" alt="Free Fire" title="Free Fire">
-      <img src="https://i.imgur.com/NkOHQlW.png" alt="Valorant" title="Valorant">
-      <img src="https://i.imgur.com/Vuy7Trf.jpeg" alt="Delta Force" title="Delta Force">
+    <div class="section">
+      <h2>🎮 Digər Oyunlar</h2>
+      <p>Call of Duty Mobile, Free Fire, Valorant, Delta Force və digər oyunlara da balans mövcuddur.</p>
+      <div class="games">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/header.jpg" alt="COD Mobile" title="COD Mobile">
+        <img src="https://static.wikia.nocookie.net/freefire/images/6/6a/FF_Logo.png" alt="Free Fire" title="Free Fire">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/09/Valorant_logo.png" alt="Valorant" title="Valorant">
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/47/Delta_Force_Hawk_Ops_cover.jpg" alt="Delta Force" title="Delta Force">
+      </div>
     </div>
 
   </div>
 
   <footer>
-    &copy; 2025 nmrSHOP🛒 | Azərbaycanda ən güvənli oyun balansı xidməti 💯
+    &copy; 2025 nmrSHOP🛒 | Azərbaycanda ən güvənli oyun balans xidməti 💯
   </footer>
 </body>
 </html>
