@@ -1,164 +1,91 @@
 <!DOCTYPE html>
 <html lang="az">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>nmrSHOP🛒 | Oyun Balansı Satışı</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nmrSHOP🛒 Admin Panel ilə</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #eee;
       margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0d0d0d;
-      color: #f1f1f1;
+      padding: 0;
     }
     header {
-      background: linear-gradient(to right, #ffcc00, #ff9900);
-      padding: 30px 10px 20px;
+      background-color: #ffcc00;
+      padding: 20px;
       text-align: center;
       color: #000;
     }
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-      font-weight: bold;
-    }
-    header p {
-      margin-top: 8px;
-      font-size: 18px;
-    }
-    .top-whatsapp {
-      margin-top: 15px;
-      text-align: center;
-    }
-    .top-whatsapp a {
-      background-color: #25D366;
-      color: white;
-      padding: 10px 16px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      margin-top: 10px;
-    }
-    .top-whatsapp img {
-      width: 20px;
-      height: 20px;
-    }
     .container {
-      max-width: 1000px;
-      margin: 0 auto;
       padding: 20px;
     }
-    .section {
-      margin-top: 30px;
-    }
-    .section h2 {
-      font-size: 22px;
-      margin-bottom: 10px;
-      border-bottom: 1px solid #555;
-      padding-bottom: 5px;
-      color: #ffcc00;
-    }
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .product {
-      background-color: #1c1c1c;
-      border-radius: 12px;
+    .admin {
+      background: #222;
       padding: 20px;
-      box-shadow: 0 0 10px rgba(255, 204, 0, 0.1);
-      transition: transform 0.3s ease;
+      border-radius: 10px;
+      margin-top: 20px;
     }
-    .product:hover {
-      transform: translateY(-5px);
-    }
-    .product h3 {
-      margin-top: 0;
-      font-size: 18px;
-    }
-    .product button {
-      margin-top: 10px;
-      background-color: #25D366;
-      color: white;
-      border: none;
-      padding: 10px 16px;
-      font-size: 16px;
-      border-radius: 8px;
-      cursor: pointer;
+    input, textarea {
       width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
     }
-    .product button:hover {
-      background-color: #1cae5d;
+    button {
+      background: #25D366;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
-    .games {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 40px;
-    }
-    .games img {
-      width: 100px;
-      height: 100px;
-      border-radius: 12px;
-      object-fit: cover;
-      border: 2px solid #333;
-      background-color: white;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: #aaa;
-      margin-top: 40px;
+    #panel {
+      display: none;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>nmrSHOP 🛒</h1>
-    <p>Oyun Balans Satışı – PUBG, COD, Free Fire və daha çoxu!</p>
+    <p>Admin Panel (Demo)</p>
   </header>
 
-  <div class="top-whatsapp">
-    <a href="https://api.whatsapp.com/send/?phone=994602020833&text=Salam%21+Dig%C9%99r+oyunlara+%C3%B6d%C9%99ni%C5%9F+bar%C9%99d%C9%99+m%C9%99lumat+almaq+ist%C9%99yir%C9%99m.&type=phone_number&app_absent=0&wame_ctl=1">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
-      060-202-08-33
-    </a>
-  </div>
-
   <div class="container">
-    <div class="section">
-      <h2>💰 Ən Yeni Qiymətlər</h2>
-      <div class="product-grid">
-        <div class="product"><h3>✔ 60 UC → 1.80 AZN</h3><button onclick="location.href='https://api.whatsapp.com/send/?phone=994602020833&text=Salam%21+M%C9%99n+60+UC+alma%C4%9F+ist%C9%99yir%C9%99m.&type=phone_number&app_absent=0&wame_ctl=1'">Sifariş et</button></div>
-        <div class="product"><h3>✔ 325 UC → 7.90 AZN</h3><button onclick="location.href='https://api.whatsapp.com/send/?phone=994602020833&text=Salam%21+M%C9%99n+325+UC+alma%C4%9F+ist%C9%99yir%C9%99m.&type=phone_number&app_absent=0&wame_ctl=1'">Sifariş et</button></div>
-        <div class="product"><h3>✔ 385 UC → 9.70 AZN</h3><button onclick="location.href='https://api.whatsapp.com/send/?phone=994602020833&text=Salam%21+M%C9%99n+385+UC+alma%C4%9F+ist%C9%99yir%C9%99m.&type=phone_number&app_absent=0&wame_ctl=1'">Sifariş et</button></div>
-        <div class="product"><h3>✔ 660 UC → 15.60 AZN</h3><button onclick="location.href='https://api.whatsapp.com/send/?phone=994602020833&text=Salam%21+M%C9%99n+660+UC+alma%C4%9F+ist%C9%99yir%C9%99m.&type=phone_number&app_absent=0&wame_ctl=1'">Sifariş et</button></div>
-        <div class="product"><h3>✔ 1.800 UC → 39.50 AZN</h3><button onclick="location.href='https://api.whatsapp.com/send/?phone=994602020833&text=Salam%21+M%C9%99n+1800+UC+alma%C4%9F+ist%C9%99yir%C9%99m.&type=phone_number&app_absent=0&wame_ctl=1'">Sifariş et</button></div>
-        <div class="product"><h3>✔ 2.460 UC → 56 AZN</h3><button onclick="location.href='https://api.whatsapp.com/send/?phone=994602020833&text=Salam%21+M%C9%99n+2460+UC+alma%C4%9F+ist%C9%99yir%C9%99m.&type=phone_number&app_absent=0&wame_ctl=1'">Sifariş et</button></div>
-        <div class="product"><h3>✔ 3.910 UC → 80.90 AZN</h3><button onclick="location.href='https://api.whatsapp.com/send/?phone=994602020833&text=Salam%21+M%C9%99n+3910+UC+alma%C4%9F+ist%C9%99yir%C9%99m.&type=phone_number&app_absent=0&wame_ctl=1'">Sifariş et</button></div>
-        <div class="product"><h3>✔ 8.100 UC → 151.90 AZN</h3><button onclick="location.href='https://api.whatsapp.com/send/?phone=994602020833&text=Salam%21+M%C9%99n+8100+UC+alma%C4%9F+ist%C9%99yir%C9%99m.&type=phone_number&app_absent=0&wame_ctl=1'">Sifariş et</button></div>
-        <div class="product"><h3>✔ 16.200 UC → 307 AZN</h3><button onclick="location.href='https://api.whatsapp.com/send/?phone=994602020833&text=Salam%21+M%C9%99n+16200+UC+alma%C4%9F+ist%C9%99yir%C9%99m.&type=phone_number&app_absent=0&wame_ctl=1'">Sifariş et</button></div>
-        <div class="product"><h3>✔ 24.300 UC → 460 AZN</h3><button onclick="location.href='https://api.whatsapp.com/send/?phone=994602020833&text=Salam%21+M%C9%99n+24300+UC+alma%C4%9F+ist%C9%99yir%C9%99m.&type=phone_number&app_absent=0&wame_ctl=1'">Sifariş et</button></div>
-        <div class="product"><h3>✔ 32.400 UC → 614.90 AZN</h3><button onclick="location.href='https://api.whatsapp.com/send/?phone=994602020833&text=Salam%21+M%C9%99n+32400+UC+alma%C4%9F+ist%C9%99yir%C9%99m.&type=phone_number&app_absent=0&wame_ctl=1'">Sifariş et</button></div>
-        <div class="product"><h3>✔ 40.500 UC → 765 AZN</h3><button onclick="location.href='https://api.whatsapp.com/send/?phone=994602020833&text=Salam%21+M%C9%99n+40500+UC+alma%C4%9F+ist%C9%99yir%C9%99m.&type=phone_number&app_absent=0&wame_ctl=1'">Sifariş et</button></div>
-      </div>
+    <div id="login">
+      <h3>Admin Panelə giriş:</h3>
+      <input type="password" id="password" placeholder="Şifrəni daxil et">
+      <button onclick="checkPassword()">Daxil ol</button>
     </div>
 
-    <div class="games">
-      <img src="https://upload.wikimedia.org/wikipedia/en/3/3c/Garena_Free_Fire_logo.png" alt="Free Fire">
-      <img src="https://upload.wikimedia.org/wikipedia/en/e/e0/Call_of_Duty_Mobile_Logo.png" alt="Call of Duty Mobile">
-      <img src="https://upload.wikimedia.org/wikipedia/en/4/47/Delta_Force_Hawk_Ops_cover.jpg" alt="Delta Force">
+    <div id="panel" class="admin">
+      <h3>Sayt məzmununu dəyiş:</h3>
+      <textarea id="prices" rows="10">✔ 60 UC → 1.80 AZN
+✔ 325 UC → 7.90 AZN
+✔ 385 UC → 9.70 AZN</textarea>
+      <button onclick="updateContent()">Yadda saxla</button>
+
+      <h3>Nəticə:</h3>
+      <pre id="preview"></pre>
     </div>
   </div>
 
-  <footer>
-    &copy; 2025 nmrSHOP🛒 | Azərbaycanda ən güvənli oyun balans xidməti 💯
-  </footer>
+  <script>
+    function checkPassword() {
+      const pass = document.getElementById("password").value;
+      if (pass === "5665") {
+        document.getElementById("login").style.display = "none";
+        document.getElementById("panel").style.display = "block";
+      } else {
+        alert("Şifrə yalnışdır!");
+      }
+    }
+    function updateContent() {
+      const text = document.getElementById("prices").value;
+      document.getElementById("preview").innerText = text;
+    }
+  </script>
 </body>
 </html>
